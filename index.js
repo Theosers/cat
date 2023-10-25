@@ -17,8 +17,19 @@ const fillSelectOptions = (races) => {
     .forEach(option => {document.getElementById('race_select').appendChild(option);});
 
 }
+const fillBoardByDefault = (races) => {
+    const divImage = document.getElementById('divImage');
+    const image = document.getElementById('image');
+    image.src = races[0].image.url;
+    image.alt = `chat de la race ${races[0].name}`;
+    console.log(races[0].image.width / races[0].image.height);
+    let imageRatio = races[0].image.width / races[0].image.height;
 
-
+    divImage.style.width = `${imageRatio*300}px`;
+    divImage.style.height = `${imageRatio*300}px`;
+    image.style.width = `${imageRatio*300}px`;
+    image.style.height = `${imageRatio*300}px`;
+}
 
 fetch('https://api.thecatapi.com/v1/breeds',
     {
@@ -33,6 +44,7 @@ fetch('https://api.thecatapi.com/v1/breeds',
    console.log(data);
    let races = data;
    fillSelectOptions(races);
+   fillBoardByDefault(races);
     
     })
     .catch(err => console.log('Une erreur est survenue'));

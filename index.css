@@ -4,6 +4,9 @@ html, body {
     height: 100%;
     background-color: beige;
 }
+#titre {
+    text-align: center ;
+}
 #catBoard {
     display: flex;
     flex-direction: column;
@@ -12,9 +15,26 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: aliceblue;
+}
+#race_select {
+    margin-bottom: 1%;
+}
+#divPicture {
+    max-width: 500px;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    border: 2px solid #000;
 
-
-
+}
+#divInfosLeft {
+    width: 100%;
+    
+}
+#divInfosRight {
+    width: 100%;
+    
 }
 #divImage {
     width: 50%;
@@ -22,4 +42,20 @@ html, body {
     background-color: aquamarine;
     border: 2px solid #000;
 
+}
+#divDescription {
+    margin-top: 1%;
+    width: 50%;
+    border: 2px solid #000;
+
+    
+}
+#divDescriptionEntete {    
+    display: flex;
+    justify-content: space-around;
+    
+}
+#divDescriptionBody {
+    text-align: center;
+    
 }

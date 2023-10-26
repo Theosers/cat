@@ -1,7 +1,7 @@
-
+import {fillBoard} from './fillContent.js'
 // ---- SELECT ON_CHANGE FETCH ----
 
-export const handleRaceChange = (selectedRace) => {
+export const handleRaceChange = (selectedRace, RACES) => {
     const choix = selectedRace.target.value;
 
     const race = RACES.find((r) => r.id === choix);

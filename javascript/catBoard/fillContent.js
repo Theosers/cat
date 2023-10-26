@@ -51,18 +51,18 @@ export const fillBoard= ({ //Destructuring de races
     const affection_levelHTML = document.getElementById('affection_level');
     const child_friendlyHTML = document.getElementById('child_friendly');
     const dog_friendlyHTML = document.getElementById('dog_friendly');
-    affection_levelHTML.innerText = `Affection level : ${affection_level}` ;
-    child_friendlyHTML.innerText = `Child Friendly : ${child_friendly}` ;
-    dog_friendlyHTML.innerText = `Dog Friendly : ${dog_friendly}` ;
+    affection_levelHTML.innerHTML = `Affection level : <span>${"❤️ ".repeat(affection_level)}</span>` ;
+    child_friendlyHTML.innerHTML = `Child Friendly : <span>${"👶 ".repeat(child_friendly)}</span>` ;
+    dog_friendlyHTML.innerHTML = `Dog Friendly : <span>${"🐕 ".repeat(dog_friendly)}</span>` ;
 
     //fill infos right
     const energy_levelHTML = document.getElementById('energy_level');
     const intelligenceHTML = document.getElementById('intelligence');
     const rareHTML = document.getElementById('rare');
-    energy_levelHTML.innerText = `Energy : ${energy_level}` ;
-    intelligenceHTML.innerText = `Intelligence : ${intelligence}` ;
-    rareHTML.innerText = `Rarity : ${rare}`;
-
+    energy_levelHTML.innerHTML =  `Energy : <span>${"⚡ ".repeat(energy_level)}</span>` ;
+    intelligenceHTML.innerHTML = `Intelligence : <span>${"🧠 ".repeat(intelligence)}</span>` ;
+    rareHTML.innerHTML = `Rarity : <span>${"💎 ".repeat(rare)}</span>`;
+    
     
 }
 export const fillBoxesImages = (image) => {

@@ -10,7 +10,12 @@ catBoard.setAttribute('id', 'catBoard');
 const titre = document.createElement('h1');
 titre.setAttribute('id', 'titre');
 titre.textContent = 'Catastrophe';
-
+const titleContainer = document.createElement('div');
+titleContainer.setAttribute('id', 'titleContainer');
+const titleImageDiv = document.createElement('div');
+titleImageDiv.setAttribute('id', 'titleImageDiv');
+const titleImageDivDeux = document.createElement('div');
+titleImageDivDeux.setAttribute('id', 'titleImageDivDeux');
 // Crée l'élément <select> pour choisir la race de chat
 const choixRaceSelect = document.createElement('select');
 choixRaceSelect.setAttribute('name', 'race_select');
@@ -105,10 +110,27 @@ divDescription.appendChild(divDescriptionEntete);
 divDescription.appendChild(divDescriptionBody);
 
 
+//Footer
 
+const footer = document.createElement('footer');
+footer.setAttribute('id', 'footer');
+const footerText = document.createElement('p');
+footerText.setAttribute('id', 'footerText');
+footerText.innerHTML = `<h2>Made with love by Théophile SERS </h2>
+                        <p>Adresse : 123 Rue des Merveilles, Ville</p>
+                        <p>Téléphone : +33 1 23 45 67 89</p>
+                        <p>Email : theophile.sers@gmail.com </p>`;
+
+const footerImage = document.createElement('img');
+footerImage.setAttribute('id', 'footerImage');
+footer.appendChild(footerText);
+footer.appendChild(footerImage);
 
 // Ajoute le sélecteur au corps de la page
-body.appendChild(titre);
+titleContainer.appendChild(titleImageDiv);
+titleContainer.appendChild(titre);
+titleContainer.appendChild(titleImageDivDeux);
+body.appendChild(titleContainer);
 body.appendChild(catBoard);
 
 catBoard.appendChild(choixRaceSelect);
@@ -116,4 +138,5 @@ catBoard.appendChild(divPicture);
 
 catBoard.appendChild(divDescription);
 
+catBoard.appendChild(footer);
 }

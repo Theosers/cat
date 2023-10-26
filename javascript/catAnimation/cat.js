@@ -57,7 +57,7 @@ export const animationPromess = (data) => {
  
             cssLink.href = '../../css/index.css';
             resolve(data); // Résoudre la promesse avec les données
-        }, 1000);
+        }, 100);
         
 
         

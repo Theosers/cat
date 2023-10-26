@@ -1,4 +1,8 @@
 import {fillBoard} from './fillContent.js'
+import {fillCheckboxes} from './fillContent.js'
+const headers = {
+    'x-api-key': 'live_jcDjJ6ZZaDVRHsoqINGrojyN50prTA2d6U9Vi5a2noxSPuN6pWkQThT0fsj6FE9t'
+}
 // ---- SELECT ON_CHANGE FETCH ----
 
 export const handleRaceChange = (selectedRace, RACES) => {

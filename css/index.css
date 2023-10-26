@@ -114,14 +114,33 @@ body {
 #divImage {
     align-self: center;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
     
     
 }
 #image {
     width: 100%;
-
-    
 }
+#divImage > #checkboxes {
+    width: 100%;
+    height: 50px;
+    color: #eeaa17;
+    text-align: center;
+    border: 2px solid #eeaa17;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #ee6917;
+
+}
+#divImage > #checkboxes > input{ 
+    height: 40px;    
+}
+
+
 #divDescription {
     background-color: black;
     margin-top: 1%;

@@ -80,11 +80,16 @@ export const fillCheckboxes = (images) => {
     checkbox.type = "radio";
     checkbox.name = image.breeds[0].name;
     checkbox.value = image.id;
+    
     checkbox.addEventListener('change', (imageSelected) => {
         if (imageSelected.target.checked) fillBoxesImages(image);         
     });
     return checkbox;
 });
-checkboxes.forEach(checkbox => divImage.appendChild(checkbox));
+const checkboxesDiv = document.createElement('div');
+checkboxesDiv.className = "checkboxes";
+checkboxesDiv.id = "checkboxes";
+checkboxes.forEach(checkbox => checkboxesDiv.appendChild(checkbox));
+divImage.appendChild(checkboxesDiv);
 
 }

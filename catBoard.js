@@ -10,10 +10,7 @@ titre.textContent = 'Catastrophe';
 const choixRaceSelect = document.createElement('select');
 choixRaceSelect.setAttribute('name', 'race_select');
 choixRaceSelect.setAttribute('id', 'race_select');
-choixRaceSelect.onchange = function () {
-    console.log('fonction sur le onchange');
-    // showBreedImage(this.value);
-};
+
 
 // crée le div picture = infosLeft + image + infosRight
 const divPicture = document.createElement('div');

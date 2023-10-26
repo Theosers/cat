@@ -1,4 +1,4 @@
-import {createCatHTML} from './catHTML.js'
+import {g_cat, createCatHTML, loading, addCatHeadImg} from './catHTML.js'
 
 
 
@@ -39,7 +39,11 @@ export const animationPromess = (data) => {
         
 
         cssLink.href = '../../css/cat.css';
+        addCatHeadImg();
+        loading();
+        g_cat();
         catAnimation();
+        
         setTimeout(() => {
             console.log('Attente de 3 secondes terminée');
 
@@ -57,7 +61,7 @@ export const animationPromess = (data) => {
  
             cssLink.href = '../../css/index.css';
             resolve(data); // Résoudre la promesse avec les données
-        }, 100);
+        }, 1000000);
         
 
         

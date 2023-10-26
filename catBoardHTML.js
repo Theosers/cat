@@ -1,4 +1,9 @@
-// Crée le div principal & titre attaché au body
+
+// Crée la structure HTML de la page
+
+export const createCatBoard = () => {
+
+    // Crée le div principal & titre attaché au body
 const body = document.querySelector('body');
 const catBoard = document.createElement('div');
 catBoard.setAttribute('id', 'catBoard');
@@ -110,13 +115,5 @@ catBoard.appendChild(choixRaceSelect);
 catBoard.appendChild(divPicture);
 
 catBoard.appendChild(divDescription);
-
-
-
-
-export const getblabla = () => {
-    
-
-
 
 }

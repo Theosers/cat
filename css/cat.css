@@ -169,3 +169,19 @@ background-image: url('../assets/12.png');
 		opacity: 0;
 	}
 }
+
+@media (max-width: 768px) {
+	.image-container {
+		width: 50%;
+		height: 40px;
+	}
+	#loading {
+		font-size: 3em;
+	}
+	#catHeadDiv {
+		top: -30px;
+	left: 40px;
+
+	}
+
+}

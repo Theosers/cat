@@ -46,22 +46,9 @@ export const animationPromess = (data) => {
         
         setTimeout(() => {
             console.log('Attente de 3 secondes terminée');
-
-
-            
-            
-            
-
-
-
-
-
-
-
- 
             cssLink.href = '../../css/index.css';
             resolve(data); // Résoudre la promesse avec les données
-        }, 1000000);
+        }, 10000);
         
 
         

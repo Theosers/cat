@@ -22,7 +22,14 @@ export const handleRaceChange = (selectedRace, RACES) => {
                 const images = data;
 
                 const previousCheckboxes = document.querySelectorAll('input[type="radio"]');
+                
                 previousCheckboxes.forEach((checkbox) => checkbox.remove());
+                const  previousCheckboxDiv = document.getElementById('checkboxes');
+                if (previousCheckboxDiv) {
+                    
+                    previousCheckboxDiv.remove();
+                }
+
 
                 fillCheckboxes(images);
             })

@@ -217,21 +217,22 @@ body {
     #divPicture {
         
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 800px;
+        flex-direction: column;   
+        max-width: 600px;
+        height: 900px;
+    }
+    #divInfosLeft {
+        padding-bottom: 0;        
+    }    
+    #divInfosRight {
+        padding-bottom: 0;
     }
     #divImage {
         align-self: flex-start;      
         
     }
-    #image {
-        padding-left: 200px;
+    #image {   
         width: 50%;
-    
-        
     }
 
     #divDescription {
@@ -246,7 +247,7 @@ body {
         font-size: 1em;
     }
     #race_select {
-        margin-top: 600px;
+        margin-top: 50px;
         margin-bottom: 1%;
 
     }
@@ -256,7 +257,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        max-width: 400px;
         height: 1000px;
     }
  

@@ -47,3 +47,16 @@ export const addCatHeadImg = () => {
     catFace.id = 'catFace';
     document.body.appendChild(catFace);
 }
+
+export const deleteHTML = () => {
+
+    const imageContainer = document.querySelector('.image-container');
+    const loading = document.getElementById('loading');
+    const catHeadDiv = document.getElementById('catHeadDiv');
+    const catFace = document.getElementById('catFace');
+    imageContainer.remove();
+    loading.remove();
+    catHeadDiv.remove();
+    catFace.remove();
+
+}
